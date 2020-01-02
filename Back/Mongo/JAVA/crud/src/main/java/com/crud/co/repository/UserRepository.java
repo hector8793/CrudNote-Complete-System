@@ -1,13 +1,13 @@
-package com.crud.repository;
+package com.crud.co.repository;
 
 import java.util.List;
 
-import com.crud.model.User;
+import com.crud.co.model.User;
 
 public interface UserRepository{
-	List<User> findAll();
+	public List findAll();
 	public User findOne(String Id);
 	public User saveUser(User user);
 	public void updateUser(User user);
-	public void deleteUser(String Id);
+	public int deleteUser(String Id);
 }

@@ -1,20 +1,15 @@
-package com.crud.model;
+package com.crud.co.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.io.Serializable;
-import javax.validation.constraints.NotNull;
 
 @Document(collection = "user")
 public class User implements Serializable{
 	private static final long serialVersionUID = -7788619177798333712L;
 	@Id
-	@NotNull
 	private String Id;
-	@NotNull
 	private String name;
-	@NotNull
 	private String email;
-	@NotNull
 	private String pwd;
 	
 	public User() {
@@ -22,7 +17,7 @@ public class User implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	public User(@NotNull String id, @NotNull String name, @NotNull String email, @NotNull String pwd) {
+	public User(String id, String name, String email, String pwd) {
 		super();
 		Id = id;
 		this.name = name;

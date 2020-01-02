@@ -4,6 +4,7 @@ from bson.objectid import ObjectId
 from flask import jsonify, request
 from werkzeug import generate_password_hash, check_password_hash
 
+# Añadir vehiculo
 @app.route('/add', methods=['POST'])
 def add_user():
 	_json = request.json
@@ -21,19 +22,22 @@ def add_user():
 		return resp
 	else:
 		return not_found()
-		
+
+# Obtener a los vehiculos
 @app.route('/users')
 def users():
 	users = mongo.db.user.find()
 	resp = dumps(users)
 	return resp
-		
+
+# Obtener un solo vehiculo	
 @app.route('/user/<id>')
 def user(id):
 	user = mongo.db.user.find_one({'_id': ObjectId(id)})
 	resp = dumps(user)
 	return resp
 
+# Actualizar vehiculo
 @app.route('/update', methods=['PUT'])
 def update_user():
 	_json = request.json
@@ -52,14 +56,15 @@ def update_user():
 		return resp
 	else:
 		return not_found()
-		
+
+# Eliminar usuario		
 @app.route('/delete/<id>', methods=['DELETE'])
 def delete_user(id):
 	mongo.db.user.delete_one({'_id': ObjectId(id)})
 	resp = jsonify('User deleted successfully!')
 	resp.status_code = 200
 	return resp
-		
+	
 @app.errorhandler(404)
 def not_found(error=None):
     message = {
