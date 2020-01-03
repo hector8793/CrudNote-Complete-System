@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\HECTOR\\Desktop\\Proyectos\\Programacion\\CrudNote-Complete-System\\Back\\Mongo\\NETCORE\\NETCORE.csproj",
+  "FilePath": "/home/usuario/Escritorio/Personal/CrudNote-Complete-System/Back/Mongo/NETCORE/NETCORE.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20496,7 +20496,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 703
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "NETCORE",
   "Documents": [],

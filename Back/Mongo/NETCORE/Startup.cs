@@ -18,6 +18,7 @@ namespace NETCORE
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,10 +26,12 @@ namespace NETCORE
 
         public IConfiguration Configuration { get; }
 
+
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-              // requires using Microsoft.Extensions.Options
+            // requires using Microsoft.Extensions.Options
             services.Configure<UserstoreDatabaseSettings>(
                 Configuration.GetSection(nameof(UserstoreDatabaseSettings)));
 
@@ -46,15 +49,13 @@ namespace NETCORE
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseCors();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

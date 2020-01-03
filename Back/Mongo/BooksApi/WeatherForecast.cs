@@ -1,6 +1,6 @@
 using System;
 
-namespace NETCORE
+namespace BooksApi
 {
     public class WeatherForecast
     {
