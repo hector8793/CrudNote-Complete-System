@@ -1,5 +1,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 
 namespace NETCORE.Models
 {
@@ -7,13 +8,14 @@ namespace NETCORE.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+        public string id { get; set; }
 
-        [BsonElement("Name")]
-        public string Name { get; set; }
+        [BsonElement("name")]
+        [JsonProperty("name")]
+        public string name { get; set; }
 
-        public decimal Email { get; set; }
+        public string email { get; set; }
 
-        public string Pwd { get; set; }
+        public string pwd { get; set; }
     }
 }

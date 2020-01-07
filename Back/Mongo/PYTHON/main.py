@@ -14,9 +14,9 @@ def add_user():
 	# validate the received values
 	if _name and _email and _password and request.method == 'POST':
 		#do not save password as a plain text
-		_hashed_password = generate_password_hash(_password)
+		#_hashed_password = generate_password_hash(_password)
 		# save details
-		id = mongo.db.user.insert({'name': _name, 'email': _email, 'pwd': _hashed_password})
+		id = mongo.db.user.insert({'name': _name, 'email': _email, 'pwd': _password})
 		resp = jsonify('User added successfully!')
 		resp.status_code = 200
 		return resp
@@ -48,9 +48,9 @@ def update_user():
 	# validate the received values
 	if _name and _email and _password and _id and request.method == 'PUT':
 		#do not save password as a plain text
-		_hashed_password = generate_password_hash(_password)
+		#_hashed_password = generate_password_hash(_password)
 		# save edits
-		mongo.db.user.update_one({'_id': ObjectId(_id['$oid']) if '$oid' in _id else ObjectId(_id)}, {'$set': {'name': _name, 'email': _email, 'pwd': _hashed_password}})
+		mongo.db.user.update_one({'_id': ObjectId(_id['$oid']) if '$oid' in _id else ObjectId(_id)}, {'$set': {'name': _name, 'email': _email, 'pwd': _password}})
 		resp = jsonify('User updated successfully!')
 		resp.status_code = 200
 		return resp

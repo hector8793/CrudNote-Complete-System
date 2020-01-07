@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "NETCORE/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.0.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "3.1.0",
           "Microsoft.Extensions.Options": "3.1.0",
           "MongoDB.Driver": "2.10.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -331,38 +331,38 @@
           "lib/netstandard2.0/DnsClient.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+      "Microsoft.AspNetCore.JsonPatch/3.1.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.6.0",
+          "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.19.46502"
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56601"
           }
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.1.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "3.0.0",
+          "Microsoft.AspNetCore.JsonPatch": "3.1.0",
           "Newtonsoft.Json": "12.0.2",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.19.46502"
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.100.19.56601"
           }
         },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
         }
       },
-      "Microsoft.CSharp/4.6.0": {},
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {},
       "Microsoft.Extensions.Options/3.1.0": {
         "dependencies": {
@@ -3130,26 +3130,26 @@
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+    "Microsoft.AspNetCore.JsonPatch/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LQVXEPxV4jIUiVHHUgBzZxOePSdD7wxV1ndtjg1a76JMqoK3siFka2pVfJXwRq0G4hxbYVWxvamqO733wUhQiA==",
-      "path": "microsoft.aspnetcore.jsonpatch/3.0.0",
-      "hashPath": "microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512"
+      "sha512": "sha512-EctKEX24sGLS4Brg2hdxZQc3WwP9MKFvk0d1oa8ilyt8q0rgo73G6ptxQvkFmQwaG+SKnkVV31T2UN3nSYhPGA==",
+      "path": "microsoft.aspnetcore.jsonpatch/3.1.0",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-euuKDPev8bb87dzyyDd252jxafKkCNCU0Yh1ujLq7DT7g4sUwUsq1bVnow9isaYFFx+DBWSywUcL8ngSra0QHg==",
-      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.0.0",
-      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512"
+      "sha512": "sha512-DL3tgfLLeLT6bd64MiByrvDJn27Z8DNX4KWM1Ss4ge8zitcB8inNMVCpx4w+uVvdPqkVkLgVgPWIBx/cWXYaVQ==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.1.0",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.6.0": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
-      "path": "microsoft.csharp/4.6.0",
-      "hashPath": "microsoft.csharp.4.6.0.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
       "type": "package",

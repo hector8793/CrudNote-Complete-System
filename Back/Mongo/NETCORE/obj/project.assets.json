@@ -14,10 +14,10 @@
           "lib/netstandard2.0/DnsClient.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/3.0.0": {
+      "Microsoft.AspNetCore.JsonPatch/3.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.6.0",
+          "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
@@ -27,24 +27,24 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "3.0.0",
+          "Microsoft.AspNetCore.JsonPatch": "3.1.0",
           "Newtonsoft.Json": "12.0.2",
           "Newtonsoft.Json.Bson": "1.0.2"
         },
         "compile": {
-          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.CSharp/4.6.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1898,36 +1898,38 @@
         "lib/netstandard2.0/DnsClient.xml"
       ]
     },
-    "Microsoft.AspNetCore.JsonPatch/3.0.0": {
-      "sha512": "LQVXEPxV4jIUiVHHUgBzZxOePSdD7wxV1ndtjg1a76JMqoK3siFka2pVfJXwRq0G4hxbYVWxvamqO733wUhQiA==",
+    "Microsoft.AspNetCore.JsonPatch/3.1.0": {
+      "sha512": "EctKEX24sGLS4Brg2hdxZQc3WwP9MKFvk0d1oa8ilyt8q0rgo73G6ptxQvkFmQwaG+SKnkVV31T2UN3nSYhPGA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.jsonpatch/3.0.0",
+      "path": "microsoft.aspnetcore.jsonpatch/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.xml",
-        "microsoft.aspnetcore.jsonpatch.3.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
         "microsoft.aspnetcore.jsonpatch.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.0.0": {
-      "sha512": "euuKDPev8bb87dzyyDd252jxafKkCNCU0Yh1ujLq7DT7g4sUwUsq1bVnow9isaYFFx+DBWSywUcL8ngSra0QHg==",
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/3.1.0": {
+      "sha512": "DL3tgfLLeLT6bd64MiByrvDJn27Z8DNX4KWM1Ss4ge8zitcB8inNMVCpx4w+uVvdPqkVkLgVgPWIBx/cWXYaVQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.0.0",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/3.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
-        "lib/netcoreapp3.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
-        "microsoft.aspnetcore.mvc.newtonsoftjson.3.0.0.nupkg.sha512",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.xml",
+        "microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.newtonsoftjson.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.6.0": {
-      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.6.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1950,7 +1952,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.6.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -6478,7 +6480,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.0.0",
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.0",
       "Microsoft.Extensions.Options >= 3.1.0",
       "MongoDB.Driver >= 2.10.0"
     ]
@@ -6520,7 +6522,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[3.1.0, )"
           },
           "Microsoft.Extensions.Options": {
             "target": "Package",

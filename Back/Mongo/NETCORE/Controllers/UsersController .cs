@@ -38,20 +38,20 @@ namespace NETCORE.Controllers
         {
             _UserService.Create(User);
 
-            return CreatedAtRoute("GetUser", new { id = User.Id.ToString() }, User);
+            return CreatedAtRoute("GetUser", new { id = User.id.ToString() }, User);
         }
 
-        [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, User UserIn)
+        [HttpPut]
+        public IActionResult Update(User UserIn)
         {
-            var User = _UserService.Get(id);
+            var User = _UserService.Get(UserIn.id);
 
             if (User == null)
             {
                 return NotFound();
             }
 
-            _UserService.Update(id, UserIn);
+            _UserService.Update(UserIn.id, UserIn);
 
             return NoContent();
         }
@@ -66,7 +66,7 @@ namespace NETCORE.Controllers
                 return NotFound();
             }
 
-            _UserService.Remove(User.Id);
+            _UserService.Remove(User.id);
 
             return NoContent();
         }

@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "ac7d48d6-32a1-4225-84a3-980fcaecb06c",
+		"name": "Csharp + NetCore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users/5e0a0c33f46c136686237314",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"5e0a0c33f46c136686237314"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pwd\": \"pbkdf2:sha256:150000$SQ2lAPFx$d29792f79db1a6ea7efa74561444a1ec1bf4e5e080fe2fcd0d2316c5ef33ae19\",\n    \"name\": \"dsadasdsa\",\n    \"email\": \"asdasdasds\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"5e14a6b98310442295a43eed\",\n    \"pwd\": \"pbkdf2:sha256:150000$SQ2lAPFx$d29792f79db1a6ea7efa74561444a1ec1bf4e5e080fe2fcd0d2316c5ef33ae19\",\n    \"name\": \"fffffffffffffffffff\",\n    \"email\": \"asdasdasds\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/users/5e0a0c33f46c136686237314",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"5e0a0c33f46c136686237314"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

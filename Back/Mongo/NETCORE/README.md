@@ -12,5 +12,6 @@ sudo apt-get install dotnet-sdk-3.1
 
 dotnet new webapi -o NETCORE
 dotnet add NETCORE.csproj package MongoDB.Driver
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 3.1.0
 dotnet run
 
