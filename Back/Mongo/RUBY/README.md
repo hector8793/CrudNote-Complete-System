@@ -27,3 +27,16 @@ rails new MONGORAILS
 bundle install
 rails generate model User name email pwd
 rails g mongoid:config
+
+
+rails server | correr app
+bundle install | instalar paquetes
+gem install rails
+rails -v
+rails s
+rails new [nombre del proyecto] --api
+rails generate scaffold [TABLA] [ATRIBUTOS] ejemplo rails generate scaffold book title author synopsis year
+gem update --system
+rails console
+rails db:migrate
+gem install tzinfo-data
