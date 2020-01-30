@@ -12,7 +12,7 @@ import (
 var collection = getSesion().DB("mean-db").C("user")
 
 func getSesion() *mgo.Session {
-	session, err := mgo.Dial("mongodb://localhost")
+	session, err := mgo.Dial("mongodb://localhost:27017")
 
 	if err != nil {
 		panic(err)
