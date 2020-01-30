@@ -9,6 +9,6 @@ export class CrudService {
   constructor(private http: HttpClient) { }
 
   public sendHeald() {
-    return this.http.get('https://zavz3o1ht9.execute-api.us-east-1.amazonaws.com/qa/auth/v1/campaign/profile/CC/1030638694')
+    return this.http.get('https://xdud8ybozg.execute-api.us-east-1.amazonaws.com/qa/campaign/query/v1/findMessages/14')
   }
 }
