@@ -34,16 +34,13 @@ func UserList(w http.ResponseWriter, r *http.Request) {
 func UserId(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 	user_id := params["id"]
-
 	var oid = bson.ObjectIdHex(user_id)
 	var results = User{}
 	var err = collection.FindId(oid).One(&results)
-
 	if err != nil {
 		w.WriteHeader(500)
 		return
 	}
-
 	responseUser(w, results)
 }
 
@@ -51,20 +48,15 @@ func UserAdd(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
 	var user_data User
 	err := decoder.Decode(&user_data)
-
 	if err != nil {
 		panic(err)
 	}
-
 	defer r.Body.Close()
-
 	err = collection.Insert(user_data)
-
 	if err != nil {
 		w.WriteHeader(500)
 		return
 	}
-
 	responseUser(w, user_data)
 }
 
@@ -75,24 +67,19 @@ func UserUpdate(w http.ResponseWriter, r *http.Request) {
 	oid := bson.ObjectIdHex(user_id)
 	var user_data = User{}
 	err := decoder.Decode(&user_data)
-
 	if err != nil {
 		panic(err)
 		w.WriteHeader(500)
 		return
 	}
-
 	defer r.Body.Close()
-
 	document := bson.M{"_id": oid}
 	change := bson.M{"$set": user_data}
 	erro := collection.Update(document, change)
-
 	if erro != nil {
 		w.WriteHeader(500)
 		return
 	}
-
 	responseUser(w, user_data)
 }
 

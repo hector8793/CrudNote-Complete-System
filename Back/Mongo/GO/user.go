@@ -1,9 +1,9 @@
 package main
 
 type User struct {
-	nombre string
-	email  string
-	pwd    string
+	Name  string `json:"name"`
+	Email string `json:"email"`
+	Pwd   string `json:"pwd"`
 }
 
 type Users []User
