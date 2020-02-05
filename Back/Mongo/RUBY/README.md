@@ -23,11 +23,19 @@ Things you may want to cover:
 
 * ...
 
+rails new crud --api
+
+gem 'mongoid'
+gem 'bson_ext'
+bundle install
+rails g mongoid:config
+rails generate model User name email pwd
+
+
 rails new MONGORAILS
 bundle install
 rails generate model User name email pwd
 rails g mongoid:config
-
 
 rails server | correr app
 bundle install | instalar paquetes
