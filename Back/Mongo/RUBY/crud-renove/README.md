@@ -31,7 +31,6 @@ bundle install
 rails g mongoid:config
 rails generate model User name email pwd
 
-
 rails new MONGORAILS
 bundle install
 rails generate model User name email pwd
@@ -48,3 +47,6 @@ gem update --system
 rails console
 rails db:migrate
 gem install tzinfo-data
+
+rails g controller api/v1/User
+rails routes
