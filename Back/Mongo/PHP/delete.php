@@ -11,7 +11,7 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include_once 'db.php';
 
 $dbname = 'mean-db';
-$collection = 'user';
+$collection = 'users';
 
 //DB connection
 $db = new DbManager();

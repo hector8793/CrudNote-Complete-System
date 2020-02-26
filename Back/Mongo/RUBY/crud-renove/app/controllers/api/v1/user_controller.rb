@@ -5,8 +5,9 @@ class Api::V1::UserController < ApplicationController
         render json: @user
     end
     
-    def new
-        @user = User.new
+    def show
+        @user = User.find(params[:id])
+        render json: @user
     end
     
     def create
@@ -14,25 +15,16 @@ class Api::V1::UserController < ApplicationController
         @user.save
     end
     
-    def edit
-        @user = User.find(params[:id])
-    end
-    
     def update
         @user = User.find(params[:id])
-
-        if @user.update_attributes(user_params)
-           redirect_to root_path, notice: "#{@user.name} #{@user.email} has been updated!" and return
-         end
-
-         render 'edit'
+        @user.update_attributes(user_params)
+        render 'edit'
     end
 
     def destroy
-        @user = user.find(params[:id])
+        @user = User.find(params[:id])
         @user.destroy
-
-        redirect_to root_path, notice: "#{@user.name} #{@user.email} has been deleted!" and return
+        render 'delete'
     end
 
     private

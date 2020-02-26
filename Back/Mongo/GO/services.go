@@ -9,7 +9,7 @@ import (
 	"gopkg.in/mgo.v2/bson"
 )
 
-var collection = getSesion().DB("mean-db").C("user")
+var collection = getSesion().DB("mean-db").C("users")
 
 func getSesion() *mgo.Session {
 	session, err := mgo.Dial("mongodb://localhost:27017")

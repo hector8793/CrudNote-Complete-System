@@ -16,7 +16,7 @@ def add_user():
 		#do not save password as a plain text
 		#_hashed_password = generate_password_hash(_password)
 		# save details
-		id = mongo.db.user.insert({'name': _name, 'email': _email, 'pwd': _password})
+		id = mongo.db.users.insert({'name': _name, 'email': _email, 'pwd': _password})
 		resp = jsonify('User added successfully!')
 		resp.status_code = 200
 		return resp
@@ -26,14 +26,14 @@ def add_user():
 # Obtener a los vehiculos
 @app.route('/users')
 def users():
-	users = mongo.db.user.find()
+	users = mongo.db.users.find()
 	resp = dumps(users)
 	return resp
 
 # Obtener un solo vehiculo	
 @app.route('/user/<id>')
 def user(id):
-	user = mongo.db.user.find_one({'_id': ObjectId(id)})
+	user = mongo.db.users.find_one({'_id': ObjectId(id)})
 	resp = dumps(user)
 	return resp
 
@@ -50,7 +50,7 @@ def update_user():
 		#do not save password as a plain text
 		#_hashed_password = generate_password_hash(_password)
 		# save edits
-		mongo.db.user.update_one({'_id': ObjectId(_id['$oid']) if '$oid' in _id else ObjectId(_id)}, {'$set': {'name': _name, 'email': _email, 'pwd': _password}})
+		mongo.db.users.update_one({'_id': ObjectId(_id['$oid']) if '$oid' in _id else ObjectId(_id)}, {'$set': {'name': _name, 'email': _email, 'pwd': _password}})
 		resp = jsonify('User updated successfully!')
 		resp.status_code = 200
 		return resp
@@ -60,7 +60,7 @@ def update_user():
 # Eliminar usuario		
 @app.route('/delete/<id>', methods=['DELETE'])
 def delete_user(id):
-	mongo.db.user.delete_one({'_id': ObjectId(id)})
+	mongo.db.users.delete_one({'_id': ObjectId(id)})
 	resp = jsonify('User deleted successfully!')
 	resp.status_code = 200
 	return resp

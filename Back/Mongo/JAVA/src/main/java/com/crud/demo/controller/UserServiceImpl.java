@@ -15,7 +15,7 @@ import com.crud.demo.models.User;
 public class  UserServiceImpl implements UserService{
 
 	MongoTemplate mongoTemplate;
-	public String COLLECTION = "user";
+	public String COLLECTION = "users";
 	
     @Autowired
     public UserServiceImpl(MongoTemplate mongoTemplate) {
