@@ -1,0 +1,59 @@
+$rosado: #df6666;
+$naranja :#ffa000;
+$amarillo: #ffe082;
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    .logo {
+        margin-top: 150px;
+        position: relative;
+        width: 150px;
+    }
+    .form-group {
+        max-width: 1000px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 20px;
+        .input-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            input {
+                height: 30px;
+                width: 100%;
+                border-style: none;
+                background-color: transparent;
+                border-bottom: solid #333333 1px;
+                margin-bottom: 10px;
+                outline-color: transparent;
+            }
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            button {
+                color: #fff;
+                font-size: 20px;
+                width: 100px;
+                height: 40px;
+                border-style: none;
+                border-radius: 100px;
+                margin-top: 20px;
+            }
+            .login {
+                background-color: $rosado;
+            }
+            .register {
+                background-color: $naranja;
+            }
+        }
+    }
+}

@@ -4,7 +4,9 @@ import { CrudComponent } from './crud/crud.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 const routes: Routes = [
-  { path: 'main', component: CrudComponent }
+  { path: 'main', component: CrudComponent },
+  { path: '', component: CrudComponent },
+  { path: '*', component: CrudComponent }
 ];
 
 @NgModule({
