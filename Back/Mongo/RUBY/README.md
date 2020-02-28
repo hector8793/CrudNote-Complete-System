@@ -22,20 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-rails new crud --api
-
-gem 'mongoid'
-gem 'bson_ext'
-bundle install
-rails g mongoid:config
-rails generate model User name email pwd
-
-rails new MONGORAILS
-bundle install
-rails generate model User name email pwd
-rails g mongoid:config
-
 rails server | correr app
 bundle install | instalar paquetes
 gem install rails
@@ -48,5 +34,12 @@ rails console
 rails db:migrate
 gem install tzinfo-data
 
+/****** Mongo Poryect *******/
+rails new crud --api
+gem 'mongoid'
+gem 'bson_ext'
+bundle install
+rails generate model User name email pwd
+rails g mongoid:config
 rails g controller api/v1/User
 rails routes

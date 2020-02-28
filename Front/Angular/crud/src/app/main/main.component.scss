@@ -1,0 +1,38 @@
+$rosado: #df6666;
+$naranja :#ffa000;
+$amarillo: #ffe082;
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    .circle-element{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $rosado;
+        width: 200px;
+        height: 200px;
+        border-radius: 520px;
+        display: -webkit-box;
+        display: grid;
+        margin-top: 50px;
+        -webkit-box-pack: center;
+        img{
+            width: 100px;
+            margin-left: 57px;
+            position: relative;
+            margin-top: 49px;
+        }
+        p{
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+    

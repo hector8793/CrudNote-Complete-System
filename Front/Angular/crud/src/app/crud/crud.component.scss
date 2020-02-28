@@ -11,9 +11,11 @@ $amarillo: #ffe082;
     justify-content: center;
     display: block;
     .logo {
-        margin-top: 150px;
+        margin-top: 100px;
         position: relative;
         width: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .form-group {
         max-width: 1000px;
@@ -26,13 +28,17 @@ $amarillo: #ffe082;
             justify-content: center;
             width: 100%;
             input {
-                height: 30px;
+                height: 45px;
                 width: 100%;
                 border-style: none;
                 background-color: transparent;
-                border-bottom: solid #333333 1px;
-                margin-bottom: 10px;
+                border-bottom: solid $naranja 1px;
+                margin-bottom: 40px;
                 outline-color: transparent;
+                text-align: center;
+                ::placeholder{
+                    color:$rosado;
+                }
             }
         }
         .button-container {
@@ -42,7 +48,7 @@ $amarillo: #ffe082;
             button {
                 color: #fff;
                 font-size: 20px;
-                width: 100px;
+                width: 270px;
                 height: 40px;
                 border-style: none;
                 border-radius: 100px;

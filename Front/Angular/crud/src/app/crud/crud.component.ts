@@ -7,6 +7,7 @@ import { CrudService } from '../crud.service';
   styleUrls: ['./crud.component.scss']
 })
 export class CrudComponent implements OnInit {
+  public register = false
 
   constructor(private crudService: CrudService) { }
 
@@ -14,6 +15,11 @@ export class CrudComponent implements OnInit {
     this.crudService.sendHeald().subscribe((resp)=>{
       console.log(resp);
     })
+  }
+
+
+  GoToRegister(){
+    
   }
 
 }
